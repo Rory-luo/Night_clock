@@ -1,19 +1,19 @@
 name: Morning_Clock
 on:
   schedule:
-  - cron:  '0 0 * * *'
+  - cron:  '0 11 * * *'
   workflow_dispatch:
 
 jobs:
   send_message:
     runs-on: ubuntu-latest
-    name: Give girlfriend a morning information
+    name: Nighty night
 
     steps:
     - name: checkout
       uses: actions/checkout@v3
       with:
-        ref: Morning
+        ref: Night
 
     - name: sender
       uses: actions/setup-python@v2
